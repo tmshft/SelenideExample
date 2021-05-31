@@ -1,12 +1,12 @@
 {
-  "uid" : "99a3f85342bfb4d",
-  "name" : "repetition 1 of 2",
-  "fullName" : "jp.shiftinc.automation.WebDriverTest.edgeTest91",
-  "historyId" : "6a606c692073f9fbe975b0109c455086",
+  "uid" : "9b01436cb2cedc0",
+  "name" : "repetition 2 of 5",
+  "fullName" : "jp.shiftinc.automation.WebDriverTest.edgeTest90",
+  "historyId" : "9b2650e116225c5a75da29d2216e1989",
   "time" : {
-    "start" : 1622477548663,
-    "stop" : 1622477552166,
-    "duration" : 3503
+    "start" : 1622478313371,
+    "stop" : 1622478321609,
+    "duration" : 8238
   },
   "description" : "",
   "status" : "passed",
@@ -19,9 +19,9 @@
     "steps" : [ {
       "name" : "$(\"open\") https://www.selenium.dev/downloads/",
       "time" : {
-        "start" : 1622477548664,
-        "stop" : 1622477551244,
-        "duration" : 2580
+        "start" : 1622478313373,
+        "stop" : 1622478320586,
+        "duration" : 7213
       },
       "status" : "passed",
       "steps" : [ ],
@@ -29,14 +29,14 @@
       "parameters" : [ ],
       "shouldDisplayMessage" : false,
       "attachmentsCount" : 0,
-      "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "stepsCount" : 0
     }, {
       "name" : "$(\"a[href*=\".150.1.zip\"]\") should([visible, 20 s.])",
       "time" : {
-        "start" : 1622477551244,
-        "stop" : 1622477551328,
-        "duration" : 84
+        "start" : 1622478320587,
+        "stop" : 1622478320675,
+        "duration" : 88
       },
       "status" : "passed",
       "steps" : [ ],
@@ -44,13 +44,13 @@
       "parameters" : [ ],
       "shouldDisplayMessage" : false,
       "attachmentsCount" : 0,
-      "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "stepsCount" : 0
     }, {
       "name" : "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.37",
       "time" : {
-        "start" : 1622477551335,
-        "stop" : 1622477551335,
+        "start" : 1622478320681,
+        "stop" : 1622478320681,
         "duration" : 0
       },
       "status" : "passed",
@@ -59,14 +59,14 @@
       "parameters" : [ ],
       "shouldDisplayMessage" : false,
       "attachmentsCount" : 0,
-      "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "stepsCount" : 0
     }, {
       "name" : "$(\"open\") edge://version",
       "time" : {
-        "start" : 1622477551335,
-        "stop" : 1622477551480,
-        "duration" : 145
+        "start" : 1622478320681,
+        "stop" : 1622478320829,
+        "duration" : 148
       },
       "status" : "passed",
       "steps" : [ ],
@@ -74,14 +74,14 @@
       "parameters" : [ ],
       "shouldDisplayMessage" : false,
       "attachmentsCount" : 0,
-      "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "stepsCount" : 0
     }, {
       "name" : "$(\"#version\") should([visible, 20 s.])",
       "time" : {
-        "start" : 1622477551480,
-        "stop" : 1622477551523,
-        "duration" : 43
+        "start" : 1622478320829,
+        "stop" : 1622478320869,
+        "duration" : 40
       },
       "status" : "passed",
       "steps" : [ ],
@@ -89,14 +89,14 @@
       "parameters" : [ ],
       "shouldDisplayMessage" : false,
       "attachmentsCount" : 0,
-      "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "stepsCount" : 0
     }, {
       "name" : "$(\"#version\") text()",
       "time" : {
-        "start" : 1622477551523,
-        "stop" : 1622477551555,
-        "duration" : 32
+        "start" : 1622478320870,
+        "stop" : 1622478320898,
+        "duration" : 28
       },
       "status" : "passed",
       "steps" : [ ],
@@ -104,13 +104,13 @@
       "parameters" : [ ],
       "shouldDisplayMessage" : false,
       "attachmentsCount" : 0,
-      "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "stepsCount" : 0
     }, {
       "name" : "91.0.864.37 (Official build) (64-bit)",
       "time" : {
-        "start" : 1622477551555,
-        "stop" : 1622477551555,
+        "start" : 1622478320898,
+        "stop" : 1622478320898,
         "duration" : 0
       },
       "status" : "passed",
@@ -119,15 +119,15 @@
       "parameters" : [ ],
       "shouldDisplayMessage" : false,
       "attachmentsCount" : 0,
-      "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : false,
+      "stepsCount" : 0
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
     "shouldDisplayMessage" : false,
     "attachmentsCount" : 0,
-    "stepsCount" : 7,
-    "hasContent" : true
+    "hasContent" : true,
+    "stepsCount" : 7
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -135,7 +135,7 @@
     "value" : "fv-az177-15"
   }, {
     "name" : "thread",
-    "value" : "1812@fv-az177-15.Test worker(10)"
+    "value" : "5048@fv-az177-15.Test worker(10)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -150,7 +150,7 @@
     "value" : "jp.shiftinc.automation.WebDriverTest"
   }, {
     "name" : "testMethod",
-    "value" : "edgeTest91"
+    "value" : "edgeTest90"
   }, {
     "name" : "suite",
     "value" : "jp.shiftinc.automation.WebDriverTest"
@@ -168,6 +168,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "99a3f85342bfb4d.json",
+  "source" : "9b01436cb2cedc0.json",
   "parameterValues" : [ ]
 }
