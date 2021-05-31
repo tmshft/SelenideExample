@@ -21,12 +21,19 @@ jobs:
           #mkdir -p build/reports/allure-report/junit
           #cp -Force -Recurse build/reports/tests/test/* build/reports/allure-report/junit
 
-      - name: Allure Reportの出力
-        uses: actions/upload-artifact@v1.0.0
+      - name: get report history
+        uses: actions/checkout@v2
         with:
-          name: allure-report
-          path: build/reports/allure-report
-        if: always()
+          ref: test-report
+          path: test-report
+
+      - name: create report with history
+        uses: simple-elf/allure-report-action@master
+        with:
+          allure_results: build/allure-results
+          gh_pages: test-report
+          allure_report: build/allure-report
+          allure_history: build/allure-history
 
       - name: deploy to pages
         uses: peaceiris/actions-gh-pages@v3
