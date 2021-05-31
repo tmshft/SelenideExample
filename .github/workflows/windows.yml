@@ -16,7 +16,7 @@ jobs:
         name: テストコードのチェックアウト
 
       - name: テスト実行
-        if: succeeded() || failed()
+        if: ${{ always() }}
         run: |
           ./gradlew clean test --tests WebDriverTest.edgeTest* allureReport
           mkdir -p build/reports/allure-report/junit
