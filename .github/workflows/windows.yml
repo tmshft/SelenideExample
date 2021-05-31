@@ -16,13 +16,14 @@ jobs:
         name: テストコードのチェックアウト
 
       - name: テスト実行
-        if: ${{ always() }}
+        if: ${{ success() || failure() }}
         run: |
           ./gradlew clean test --tests WebDriverTest.edgeTest* allureReport
           mkdir -p build/reports/allure-report/junit
           cp -Force -Recurse build/reports/tests/test/* build/reports/allure-report/junit
 
       - name: deploy to pages
+        if: ${{ success() || failure() }}
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
