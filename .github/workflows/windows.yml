@@ -17,7 +17,7 @@ jobs:
 
       - name: テスト実行
         run: |
-          ./gradlew clean test --tests WebDriverTest.edgeTest90 allureReport
+          ./gradlew clean test --tests WebDriverTest.edgeTest* allureReport
           mkdir -p build/reports/allure-report/junit
           cp -Force -Recurse build/reports/tests/test/* build/reports/allure-report/junit
 
