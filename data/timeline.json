@@ -1,0 +1,26 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "fv-az177-15",
+    "children" : [ {
+      "name" : "4616@fv-az177-15.Test worker(10)",
+      "children" : [ {
+        "name" : "edgeTest90()",
+        "uid" : "a1ed2cdeaa276e10",
+        "parentUid" : "ccdc3e9026777f02b90452eb6695f540",
+        "status" : "passed",
+        "time" : {
+          "start" : 1622473765610,
+          "stop" : 1622473802973,
+          "duration" : 37363
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ccdc3e9026777f02b90452eb6695f540"
+    } ],
+    "uid" : "aa981efa7b32e8e2c84ed166c93406da"
+  } ]
+}

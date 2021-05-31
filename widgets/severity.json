@@ -1,0 +1,11 @@
+[ {
+  "uid" : "a1ed2cdeaa276e10",
+  "name" : "edgeTest90()",
+  "time" : {
+    "start" : 1622473765610,
+    "stop" : 1622473802973,
+    "duration" : 37363
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

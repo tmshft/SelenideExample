@@ -1,0 +1,22 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "jp.shiftinc.automation.WebDriverTest",
+    "children" : [ {
+      "name" : "edgeTest90()",
+      "uid" : "a1ed2cdeaa276e10",
+      "parentUid" : "4f6154f8e3ec649b4a9128e45abf5bc7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1622473765610,
+        "stop" : 1622473802973,
+        "duration" : 37363
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "4f6154f8e3ec649b4a9128e45abf5bc7"
+  } ]
+}

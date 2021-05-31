@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon May 31 15:09:25 UTC 2021","Mon May 31 15:10:02 UTC 2021","37363","","jp.shiftinc.automation.WebDriverTest","","jp.shiftinc.automation.WebDriverTest","edgeTest90","edgeTest90()",""
