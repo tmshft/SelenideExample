@@ -18,28 +18,14 @@ jobs:
       - name: テスト実行
         run: |
           ./gradlew clean test --tests WebDriverTest.edgeTest90 allureReport
-          #mkdir -p build/reports/allure-report/junit
-          #cp -Force -Recurse build/reports/tests/test/* build/reports/allure-report/junit
-
-      - name: get report history
-        uses: actions/checkout@v2
-        with:
-          ref: test-report
-          path: test-report
-
-      - name: create report with history
-        uses: simple-elf/allure-report-action@master
-        with:
-          allure_results: build/allure-results
-          gh_pages: test-report
-          allure_report: build/allure-report
-          allure_history: build/allure-history
+          mkdir -p build/reports/allure-report/junit
+          cp -Force -Recurse build/reports/tests/test/* build/reports/allure-report/junit
 
       - name: deploy to pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: build/allure-history
+          publish_dir: build/allure-report
           publish_branch: test-report
         if: always()
 
