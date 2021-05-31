@@ -17,10 +17,9 @@ jobs:
 
       - name: テスト実行
         run: |
-          ./gradlew clean test --tests WebDriverTest.edgeTest* allureReport
-          mkdir -p build/reports/allure-report/junit
+          ./gradlew clean test --tests WebDriverTest.edgeTest90 allureReport
+          #mkdir -p build/reports/allure-report/junit
           #cp -Force -Recurse build/reports/tests/test/* build/reports/allure-report/junit
-        if: always()
 
       - name: Allure Reportの出力
         uses: actions/upload-artifact@v1.0.0
