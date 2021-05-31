@@ -16,6 +16,7 @@ jobs:
         name: テストコードのチェックアウト
 
       - name: テスト実行
+        if: succeeded() || failed()
         run: |
           ./gradlew clean test --tests WebDriverTest.edgeTest* allureReport
           mkdir -p build/reports/allure-report/junit
@@ -27,5 +28,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: build/reports/allure-report
           publish_branch: test-report
-        if: always()
 
