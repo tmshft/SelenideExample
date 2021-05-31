@@ -20,7 +20,7 @@ jobs:
           chmod +x .\gradlew
           ./gradlew clean test --tests WebDriverTest.edgeTest* allureReport
           mkdir -p build\reports\allure-report\junit
-          cp -fr build\reports\tests\test\* build\reports\allure-report\junit
+          cp -Force -Recurse build\reports\tests\test\* build\reports\allure-report\junit
 
       - name: deploy to pages
         uses: peaceiris/actions-gh-pages@v3
