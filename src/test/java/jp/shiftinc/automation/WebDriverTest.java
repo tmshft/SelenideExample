@@ -36,13 +36,13 @@ public class WebDriverTest {
         SelenideLogger.removeListener("AllureSelenide");
     }
 
-    @Test
+    @RepeatedTest(value = 5)
     public void edgeTest90() {
         Configuration.browserVersion = "90.0.818.66";
         test();
     }
 
-    @Test
+    @RepeatedTest(value = 5)
     public void edgeTest91() {
         Configuration.browserVersion = "91.0.864.37";
         test();
