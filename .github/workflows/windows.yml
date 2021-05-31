@@ -18,9 +18,14 @@ jobs:
       - name: テスト実行
         run: |
           chmod +x .\gradlew
-          ./gradlew clean test --tests $TEST_CASE allureReport
+          ./gradlew clean test --tests WebDriverTest.edgeTest* allureReport
           mkdir -p build\reports\allure-report\junit
           cp -fr build\reports\tests\test\* build\reports\allure-report\junit
-        env:
-          TEST_CASE: "*.edgeTest*"
+
+      - name: deploy to pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: build/allure-history
+          publish_branch: test-report
 
