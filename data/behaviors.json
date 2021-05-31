@@ -3,13 +3,26 @@
   "name" : "behaviors",
   "children" : [ {
     "name" : "edgeTest90()",
-    "uid" : "a1ed2cdeaa276e10",
+    "uid" : "6edb7691266d1878",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1622473765610,
-      "stop" : 1622473802973,
-      "duration" : 37363
+      "start" : 1622475855363,
+      "stop" : 1622475866474,
+      "duration" : 11111
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "edgeTest91()",
+    "uid" : "50143725cfb7083c",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1622475866620,
+      "stop" : 1622475870452,
+      "duration" : 3832
     },
     "flaky" : false,
     "newFailed" : false,
