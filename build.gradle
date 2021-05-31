@@ -1,0 +1,75 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'io.qameta.allure:allure-gradle:2.8.1'
+    }
+}
+
+plugins {
+    id 'java'
+}
+
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'base'
+apply plugin: 'io.qameta.allure'
+apply plugin: 'idea'
+
+group 'jp.shiftinc.automation'
+version '1.0-SNAPSHOT'
+
+[javadoc, compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+allure {
+    autoconfigure = false
+    version = '2.13.8'
+    aspectjweaver = true
+    aspectjVersion = '1.9.5'
+    //noinspection GroovyAssignabilityCheck
+    useJUnit5 {
+        version = '2.13.8'
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://plugins.gradle.org/m2/"
+    }
+}
+
+dependencies {
+    // テスティングフレームワーク
+    implementation 'org.junit.jupiter:junit-jupiter-api:5.6.0-M1'
+    implementation 'org.junit.jupiter:junit-jupiter-engine:5.6.0-M1'
+    implementation 'org.junit.jupiter:junit-jupiter-params:5.6.0-M1'
+
+    /// Selenium WebDriver。runtimeだけ指定するとコンパイル時と不一致になる可能性があるため明示的に指定
+    implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
+    implementation 'org.seleniumhq.selenium:selenium-safari-driver:3.141.59'
+    implementation 'org.seleniumhq.selenium:selenium-remote-driver:3.141.59'
+
+    // Allure report
+    implementation 'io.qameta.allure:allure-junit5:2.13.8'
+    implementation 'io.qameta.allure:allure-gradle:2.8.1'
+    implementation 'io.qameta.allure:allure-selenide:2.13.9'
+
+    implementation 'com.codeborne:selenide:5.20.1'
+    implementation 'io.github.bonigarcia:webdrivermanager:4.3.1'
+}
+
+tasks.withType(Test) {
+    useJUnitPlatform {
+        includeEngines 'junit-jupiter'
+    }
+    // コマンドラインから渡したシステムプロパティをGradleにも渡す
+    systemProperties = System.getProperties()
+}
+
+test {
+    testLogging {
+        events "standard_out", "standard_error"
+    }
+}

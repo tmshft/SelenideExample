@@ -1,0 +1,24 @@
+.DS_Store
+
+# by Eclipse / Visual Studio Code
+.settings/
+.project
+.classpath
+bin/
+
+# by Intellij IDEA
+.idea/
+out/
+target/
+build/
+
+# by Gradle wrapper
+.gradle/
+
+# by Allure
+allure-results/
+.allure
+
+# by Visual Studio Code
+.vscode
+.markdownlint.json

@@ -1,0 +1,40 @@
+<configuration>
+
+    <!-- http debugログの抑止 -->
+    <logger name="org.apache" level="INFO" />
+    <logger name="httpclient" level="INFO" />
+
+    <property name="format1" value="%d [%thread] [%p]:%c#%M:%m%n" />
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${format1}</pattern>
+        </encoder>
+    </appender>
+
+    <!--
+      ログの出力が必要な場合は下記<property,appender,root/appender-ref節をコメント解除してください。
+      初期ローテート条件：容量上限なし、10ファイル上限、日付付与
+    -->
+    <!--
+    <property name="logDir" value="./build/tmp/" />
+    <property name="fileName" value="racine.log" />
+
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${logDir}${fileName}</file>
+
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${logDir}${fileName}.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>10</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>${format1}</pattern>
+        </encoder>
+    </appender>
+    -->
+
+    <root level="INFO">
+        <!--<appender-ref ref="FILE" />-->
+        <appender-ref ref="STDOUT" />
+    </root>
+</configuration>

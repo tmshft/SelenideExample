@@ -1,0 +1,26 @@
+#
+# GitHubActions
+#
+name: Test example for Windows Runner
+on:
+  push:
+    branches:
+      - "master"
+      - "trial*"
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v1
+        name: テストコードのチェックアウト
+
+      - name: テスト実行
+        run: |
+          chmod +x .\gradlew
+          ./gradlew clean test --tests $TEST_CASE allureReport
+          mkdir -p build\reports\allure-report\junit
+          cp -fr build\reports\tests\test\* build\reports\allure-report\junit
+        env:
+          TEST_CASE: "*.edgeTest*"
+
