@@ -32,19 +32,19 @@ public class WebDriverTest {
         SelenideLogger.removeListener("AllureSelenide");
     }
 
-    @RepeatedTest(value = 5)
+    @RepeatedTest(value = 30)
     public void edgeTestNotSpecify() {
         Configuration.browserVersion = "";
         test();
     }
 
-    @RepeatedTest(value = 5)
+    @RepeatedTest(value = 30)
     public void edgeTest90() {
         Configuration.browserVersion = "90.0.818.66";
         test();
     }
 
-    @RepeatedTest(value = 5)
+    @RepeatedTest(value = 30)
     public void edgeTest91() {
         Configuration.browserVersion = "91.0.864.37";
         test();
