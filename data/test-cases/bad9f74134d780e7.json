@@ -1,0 +1,173 @@
+{
+  "uid" : "bad9f74134d780e7",
+  "name" : "repetition 27 of 30",
+  "fullName" : "jp.shiftinc.automation.WebDriverTest.edgeTest91",
+  "historyId" : "cdc04a0928a1e9a439eb26bd0a423a42",
+  "time" : {
+    "start" : 1622512371842,
+    "stop" : 1622512375175,
+    "duration" : 3333
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "$(\"open\") https://www.selenium.dev/downloads/",
+      "time" : {
+        "start" : 1622512371843,
+        "stop" : 1622512374238,
+        "duration" : 2395
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"a[href*=\".150.1.zip\"]\") should([visible, 20 s.])",
+      "time" : {
+        "start" : 1622512374238,
+        "stop" : 1622512374323,
+        "duration" : 85
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.37",
+      "time" : {
+        "start" : 1622512374329,
+        "stop" : 1622512374329,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"open\") edge://version",
+      "time" : {
+        "start" : 1622512374329,
+        "stop" : 1622512374495,
+        "duration" : 166
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"#version\") should([visible, 20 s.])",
+      "time" : {
+        "start" : 1622512374495,
+        "stop" : 1622512374532,
+        "duration" : 37
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "$(\"#version\") text()",
+      "time" : {
+        "start" : 1622512374532,
+        "stop" : 1622512374559,
+        "duration" : 27
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "91.0.864.37 (Official build) (64-bit)",
+      "time" : {
+        "start" : 1622512374559,
+        "stop" : 1622512374559,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 7,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az177-15"
+  }, {
+    "name" : "thread",
+    "value" : "6124@fv-az177-15.Test worker(10)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "jp.shiftinc.automation.WebDriverTest"
+  }, {
+    "name" : "testClass",
+    "value" : "jp.shiftinc.automation.WebDriverTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "edgeTest91"
+  }, {
+    "name" : "suite",
+    "value" : "jp.shiftinc.automation.WebDriverTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "bad9f74134d780e7.json",
+  "parameterValues" : [ ]
+}
