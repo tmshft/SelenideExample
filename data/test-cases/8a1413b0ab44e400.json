@@ -1,12 +1,12 @@
 {
-  "uid" : "87733d347ff03ad0",
-  "name" : "repetition 3 of 5",
-  "fullName" : "jp.shiftinc.automation.WebDriverTest.edgeTest91",
-  "historyId" : "2e613abd089b94b18b8754d36df881d1",
+  "uid" : "8a1413b0ab44e400",
+  "name" : "repetition 5 of 5",
+  "fullName" : "jp.shiftinc.automation.WebDriverTest.edgeTestNotSpecify",
+  "historyId" : "981f9e0747f2f6b34e78e7c26d5eff09",
   "time" : {
-    "start" : 1622478343072,
-    "stop" : 1622478346670,
-    "duration" : 3598
+    "start" : 1622508048882,
+    "stop" : 1622508052220,
+    "duration" : 3338
   },
   "description" : "",
   "status" : "passed",
@@ -19,9 +19,9 @@
     "steps" : [ {
       "name" : "$(\"open\") https://www.selenium.dev/downloads/",
       "time" : {
-        "start" : 1622478343072,
-        "stop" : 1622478345749,
-        "duration" : 2677
+        "start" : 1622508048883,
+        "stop" : 1622508051290,
+        "duration" : 2407
       },
       "status" : "passed",
       "steps" : [ ],
@@ -34,9 +34,9 @@
     }, {
       "name" : "$(\"a[href*=\".150.1.zip\"]\") should([visible, 20 s.])",
       "time" : {
-        "start" : 1622478345749,
-        "stop" : 1622478345830,
-        "duration" : 81
+        "start" : 1622508051290,
+        "stop" : 1622508051373,
+        "duration" : 83
       },
       "status" : "passed",
       "steps" : [ ],
@@ -49,8 +49,8 @@
     }, {
       "name" : "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.37",
       "time" : {
-        "start" : 1622478345837,
-        "stop" : 1622478345837,
+        "start" : 1622508051379,
+        "stop" : 1622508051379,
         "duration" : 0
       },
       "status" : "passed",
@@ -64,9 +64,9 @@
     }, {
       "name" : "$(\"open\") edge://version",
       "time" : {
-        "start" : 1622478345837,
-        "stop" : 1622478345984,
-        "duration" : 147
+        "start" : 1622508051380,
+        "stop" : 1622508051551,
+        "duration" : 171
       },
       "status" : "passed",
       "steps" : [ ],
@@ -79,9 +79,9 @@
     }, {
       "name" : "$(\"#version\") should([visible, 20 s.])",
       "time" : {
-        "start" : 1622478345984,
-        "stop" : 1622478346031,
-        "duration" : 47
+        "start" : 1622508051551,
+        "stop" : 1622508051586,
+        "duration" : 35
       },
       "status" : "passed",
       "steps" : [ ],
@@ -94,8 +94,8 @@
     }, {
       "name" : "$(\"#version\") text()",
       "time" : {
-        "start" : 1622478346031,
-        "stop" : 1622478346057,
+        "start" : 1622508051586,
+        "stop" : 1622508051612,
         "duration" : 26
       },
       "status" : "passed",
@@ -109,8 +109,8 @@
     }, {
       "name" : "91.0.864.37 (Official build) (64-bit)",
       "time" : {
-        "start" : 1622478346057,
-        "stop" : 1622478346057,
+        "start" : 1622508051612,
+        "stop" : 1622508051612,
         "duration" : 0
       },
       "status" : "passed",
@@ -135,7 +135,7 @@
     "value" : "fv-az177-15"
   }, {
     "name" : "thread",
-    "value" : "5048@fv-az177-15.Test worker(10)"
+    "value" : "2804@fv-az177-15.Test worker(10)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -150,7 +150,7 @@
     "value" : "jp.shiftinc.automation.WebDriverTest"
   }, {
     "name" : "testMethod",
-    "value" : "edgeTest91"
+    "value" : "edgeTestNotSpecify"
   }, {
     "name" : "suite",
     "value" : "jp.shiftinc.automation.WebDriverTest"
@@ -168,6 +168,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "87733d347ff03ad0.json",
+  "source" : "8a1413b0ab44e400.json",
   "parameterValues" : [ ]
 }
