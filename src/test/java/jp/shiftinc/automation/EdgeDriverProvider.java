@@ -16,6 +16,7 @@ public class EdgeDriverProvider implements WebDriverProvider {
     public WebDriver createDriver(DesiredCapabilities desiredCapabilities) {
         WebDriverManager
                 .edgedriver()
+                .clearDriverCache()
                 .driverVersion(Configuration.browserVersion)
                 .setup();
         EdgeOptions options = new EdgeOptions();

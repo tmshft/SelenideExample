@@ -18,14 +18,10 @@ public class WebDriverTest {
     private static final java.util.logging.Logger LOGGER = Logger.getLogger(WebDriverTest.class.getName());
     private Duration wait = Duration.ofSeconds(20);
 
-    // 90.0.818.66
-    // 91.0.864.37
-
     @BeforeEach
     void setup() {
         Configuration.baseUrl = "https://www.selenium.dev/downloads";
         Configuration.timeout = 10;
-        //Configuration.driverManagerEnabled=true;
         Configuration.browser = "jp.shiftinc.automation.EdgeDriverProvider";
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
     }
@@ -34,6 +30,12 @@ public class WebDriverTest {
     void tearDown() {
         if(WebDriverRunner.hasWebDriverStarted()) closeWebDriver();
         SelenideLogger.removeListener("AllureSelenide");
+    }
+
+    @RepeatedTest(value = 5)
+    public void edgeTestNotSpecify() {
+        Configuration.browserVersion = "";
+        test();
     }
 
     @RepeatedTest(value = 5)
